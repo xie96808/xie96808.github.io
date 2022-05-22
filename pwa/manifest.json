@@ -3,11 +3,11 @@
   "short_name": "Coding Lane",
   "description": "xieyw Personal Website",
   "icons": [{
-    "src": "icons/pwa_icon_128.png",
+    "src": "icons/logo1.PNG",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/pwa_icon_512.png",
+    "src": "icons/logo1.PNG",
     "sizes": "512x512",
     "type": "image/png"
   }],
