@@ -56,7 +56,16 @@ kramdown:
 
 
 
-
+# 评论系统
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 4dede977f9d18025b3b5                            #生成的clientID
+  clientSecret: e581aa2d1471ebbb0785b39b54d748cff07a1301    #生成的clientSecret
+  repo: xie96808.github.io    #仓库名称
+  owner: xie96808    #github用户名
+  admin: xie96808
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 
