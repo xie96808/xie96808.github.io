@@ -12,3 +12,7 @@ tags:								#标签
 
 # Googletest概述
 
+GoogleTest（简称 GTest） 是 Google 开源的一个跨平台的（Liunx、Mac OS X、Windows等）的 C++ 单元测试框架，可以帮助程序员测试 C++ 程序的结果预期(如正常运行、出现bug等)。
+
+![](https://raw.githubusercontent.com/xie96808/xie96808.github.io/master/img/river1.jpg)
+
