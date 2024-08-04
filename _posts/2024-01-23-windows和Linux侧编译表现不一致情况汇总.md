@@ -41,22 +41,23 @@ tags:								#标签
   在Windows操作系统中，异常处理通常依赖于结构化异常处理（Structured Exception Handling，SEH）机制。SEH允许开发者捕获和处理特定类型的异常，包括跨线程和跨进程的异常。当异常发生时，Windows会将其传递给相应的异常处理程序进行处理。因此，在跨节点并行环境下，Windows提供了较为灵活的异常处理机制，可以捕获和处理来自不同节点的异常返回。 
 相比之下，Linux操作系统通常使用信号（signal）来处理异常。信号是一种软件中断，用于通知进程发生了某种事件或错误情况。在跨节点并行环境下，Linux可能需要依赖其他工具、库或技术来实现有效的异常返回和处理。这可能涉及到进程间通信（Inter-Process Communication，IPC）机制，如管道（pipe）、消息队列（message queue）或远程过程调用（Remote Procedure Call，RPC）等。 由于Windows和Linux在异常处理机制上的不同，跨节点并行异常返回在两个操作系统下的表现也会有所差异。
   本人实际开发的项目现在已经引入了跨节点并行技术(GLMPI, developed by Haida)。在需求实现过程中，常会出现某个进程报错退出，但其他进程并没有遇到异常退出信息，导致异常进程一直在等待其他进程结束从而导致软件crash的现象发生。在debug过程中我们发现，该现象在两个平台的表现存在差异。
-Windows侧表现：
+Windows侧表现：  
 
 ![image](https://github.com/user-attachments/assets/95672502-ad34-4992-8917-dfe8bf4133ab)
 
-Linux侧表现：
+Linux侧表现：  
+
 ![image](https://github.com/user-attachments/assets/e70915cf-a5c0-43d4-a9d1-430161c8bc6f)
 
 
 ### 2.6 左值右值差异
-问题代码如下：
+问题代码如下：  
 
 ![image](https://github.com/user-attachments/assets/09ee458e-ce00-4fc4-a277-5bd9f0bcbecd)
 
 ![image](https://github.com/user-attachments/assets/7a5b98d7-07cb-44de-8cc3-43bb3a6d8d39)
 
-Windows侧无问题，但Linux编译时会报错：
+Windows侧无问题，但Linux编译时会报错：  
 
 ![image](https://github.com/user-attachments/assets/8785746c-1c0a-4c5a-a140-9896559a6e68)
 
@@ -67,14 +68,16 @@ Windows侧无问题，但Linux编译时会报错：
 ## 3 其他
 ### 3.1 Qt界面和命令行表现差异
 在命令行中，\t 会被解析为制表符，而Qt 界面的文本显示控件不会自动解析\t为制表符。
-代码如下：
+代码如下：  
 
 ![image](https://github.com/user-attachments/assets/796b52e4-e0c9-485e-a381-6b7bf65ecd76)
 
-命令行表现：
+命令行表现：  
+
 ![image](https://github.com/user-attachments/assets/7ab9a04d-4819-4326-8bd3-02b5b272e84e)
 
-界面表现：
+界面表现：  
+
 ![image](https://github.com/user-attachments/assets/af2adb5b-3bef-46d6-8cf7-4c6f81566c8d)
 
 
