@@ -4,7 +4,7 @@ title:      C++Windows/Linux侧编译表现不一致问题汇总				# 标题
 subtitle:    #副标题
 date:       2024-01-23 				# 时间
 author:     谢玄xx 						# 作者
-header-img: img/sea2.jpg 	#这篇文章标题背景图片
+header-img: img/bit (1).jpg	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - 开发问题总结
