@@ -22,14 +22,18 @@ tags:								#标签
   尽管C++标准为跨平台开发提供了一致性，但不同的操作系统和编译器可能使用不同的标准库实现，导致在某些功能或特性上出现不一致性。
 ** floor/floorl相关函数
   在编译floor函数时，两平台表现一致，但在编译std::floorl时，Linux侧编译不过，报错'floorf' is not a member of 'std' ：
+  
 ![image](https://github.com/user-attachments/assets/5a7afc1b-29b7-4c8a-b55b-a9f9c5383dc6)
+
 解决方式一：std::floorf修改为::floorl。因为floorl()属于C标准库，所以在glibc中有一个全局符号。由于解决方法使用全局符号，C++11 允许但不要求存在，因此该解决方法不可移植。
 解决方式二：引入<math.h> 头文件。Windows 上，floor() 和 floorl() 函数通常定义在 <cmath> 头文件中，而在 Linux 上，则通常定义在 <math.h> 头文件中。在使用这些函数之前，确保正确包含相应的头文件。
 
 ### 2.3 操作系统API差异
   操作系统提供的应用程序接口（API）在不同平台上可能有所不同，例如文件操作、网络通信、并发编程等。这可能导致代码在不同平台上产生不兼容或未定义的行为。
+  
 
 ![image](https://github.com/user-attachments/assets/7cc1ba13-f674-462f-81e8-5d4d963ff6bc)
+
 
 ### 2.4 文件路径和分隔符差异
   Windows使用反斜杠（\）作为文件路径分隔符，而Linux使用正斜杠（/）。这在处理文件路径时可能导致问题，特别是在跨平台项目中。
@@ -53,6 +57,7 @@ Linux侧表现：
 ![image](https://github.com/user-attachments/assets/7a5b98d7-07cb-44de-8cc3-43bb3a6d8d39)
 
 Windows侧无问题，但Linux编译时会报错：
+
 ![image](https://github.com/user-attachments/assets/8785746c-1c0a-4c5a-a140-9896559a6e68)
 
 问题原因：	
@@ -65,8 +70,10 @@ Windows侧无问题，但Linux编译时会报错：
 代码如下：
 
 ![image](https://github.com/user-attachments/assets/796b52e4-e0c9-485e-a381-6b7bf65ecd76)
+
 命令行表现：
 ![image](https://github.com/user-attachments/assets/7ab9a04d-4819-4326-8bd3-02b5b272e84e)
+
 界面表现：
 ![image](https://github.com/user-attachments/assets/af2adb5b-3bef-46d6-8cf7-4c6f81566c8d)
 
