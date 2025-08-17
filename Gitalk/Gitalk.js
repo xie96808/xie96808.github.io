@@ -2,8 +2,8 @@
 <!-- Gitalk 评论 start  -->
 {% if site.gitalk.enable %}
 <!-- Link Gitalk 的支持文件  -->
-<link rel="stylesheet" href="https://raw.githubusercontent.com/xie96808/xie96808.github.io/tree/main/Gitalk/dist/gitalk.css">
-<script src="https://raw.githubusercontent.com/xie96808/xie96808.github.io/tree/main/Gitalk/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 <script type="text/javascript">
