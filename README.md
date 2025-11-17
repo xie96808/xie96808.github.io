@@ -1,18 +1,18 @@
 ![](https://raw.githubusercontent.com/xie96808/xie96808.github.io/master/img/website1.PNG)
 
-这是我的网页搭建过程。感谢原作者qiubaiying！作者的Github主页：[戳这里](https://github.com/qiubaiying/qiubaiying.github.io)
+这是我通过 GitHub Pages + Jekyll 搭建并长期维护的个人博客 **Coding Lane**，记录工程实践、算法题解、音乐创作等内容。项目最初 fork 自 [qiubaiying](https://github.com/qiubaiying/qiubaiying.github.io)，在此基础上做了大量定制化开发。
 
 ## [查看我的博客戳这里 👆](https://xieyw.xyz/)
 
 ## 致谢
 
-1. 这个模板是从这里 [Hux](https://github.com/Huxpro/huxpro.github.io) fork 的, 感谢这个作者。 
-2. 感谢 Jekyll、Github Pages 和 Bootstrap!
-3. 下述教程均来源于BY Blog，一些功能的添加与修改供各位参考：）
+1. 感谢 Jekyll、Github Pages 和 Bootstrap 等开源项目。
+2. 感谢 Gitalk、Simple Jekyll Search 等优秀的社区组件。
+3. 感谢所有对 Coding Lane 提出建议的朋友。
 
 ## License
 
-遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
+遵循 MIT 许可证。有关详细请参阅本仓库的 [LICENSE](https://github.com/xie96808/xie96808.github.io/blob/master/LICENSE)。
 
  
 更为详细的教程戳这 [《利用 GitHub Pages 快速搭建个人博客》](http://www.jianshu.com/p/e68fba58f75c) 或 [wiki](https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B)
@@ -64,12 +64,12 @@ Jekyll官方网站还有很多的参数可以调，比如设置文章的链接�
 # Friends
 friends: [
     {
-        title: "BY Blog",
-        href: "https://qiubaiying.github.io/"
+        title: "Coding Lane",
+        href: "https://xieyw.xyz/"
     },
     {
-        title: "Apple",
-        href: "https://apple.com/"
+        title: "GitHub · xie96808",
+        href: "https://github.com/xie96808"
     }
 ]
 ```
@@ -88,7 +88,7 @@ HTML5幻灯片的排版：
 ```
 ---
 layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "https://xieyw.xyz/slides/coding-lane-demo/"
 ---
 ```
 
@@ -140,7 +140,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+ga_domain: xieyw.xyz			# 默认的是 auto, 如果没有自定义域名就设置为 auto。
 ```
 
 ### Customization
@@ -161,7 +161,7 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 ### SEO Title
 
-我的博客标题是 **“BY Blog”** 但是我想要在搜索的时候显示 **“柏荧的博客 | BY Blog”** ，这个就需要 SEO Title 来定义了。
+我的博客标题是 **“Coding Lane”**，如果想在搜索结果里显示 **“Coding Lane | 技术总结与思考”** ，就需要通过 SEO Title 单独定义。
 
 其实这个 SEO Title 就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
 
