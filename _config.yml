@@ -6,7 +6,7 @@ header-img: img/bit (3).jpg
 email: xie96808@gmail.com
 description: "Rest at the end, not in the middle"
 keyword: "NONE"
-url: "http://xie96808.github.io"          # your host, for absolute URL
+url: "https://xie96808.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 

@@ -20,11 +20,11 @@ const HOSTNAME_WHITELIST = [
 // The Util Function to hack URLs of intercepted requests
 const getFixedUrl = (req) => {
   var now = Date.now();
-  url = new URL(req.url)
+  const url = new URL(req.url)
 
   // 1. fixed http URL
-  // Just keep syncing with location.protocol 
-  // fetch(httpURL) belongs to active mixed content. 
+  // Just keep syncing with location.protocol
+  // fetch(httpURL) belongs to active mixed content.
   // And fetch(httpRequest) is not supported yet.
   url.protocol = self.location.protocol
 
@@ -63,7 +63,7 @@ const shouldRedirect = (req) => (isNavigationReq(req) && new URL(req.url).pathna
 // `${url}/` would mis-add "/" in the end of query, so we use URL object.
 // P.P.S. Always trust url.pathname instead of the whole url string.
 const getRedirectUrl = (req) => {
-  url = new URL(req.url)
+  const url = new URL(req.url)
   url.pathname += "/"
   return url.href
 }
