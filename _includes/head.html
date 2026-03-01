@@ -50,25 +50,19 @@
     <link rel="stylesheet" href="{{ " /css/xie-blog.min.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
-    <!-- Premium Font: Satoshi -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
-    <!-- Monospace: JetBrains Mono -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
 
+    <!-- System Fonts Fallback -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        code, pre, .code {
+            font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+        }
+    </style>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <!-- ga & ba script hoook -->
     <script></script>
-
-    <!-- Google AdSense -->
-    <script data-ad-client="ca-pub-6487568398225121" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
