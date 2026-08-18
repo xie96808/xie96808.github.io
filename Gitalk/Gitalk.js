@@ -13,7 +13,7 @@ var gitalk = new Gitalk({
   repo: 'xie96808.github.io',
   owner: 'xie96808',
   admin: ['xie96808'],
-  id: https://xieyw.xyz/,      // Ensure uniqueness and length less than 50
+  id: window.location.pathname, // Ensure uniqueness and length less than 50
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 

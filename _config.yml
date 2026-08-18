@@ -6,7 +6,7 @@ header-img: img/bit (3).jpg
 email: xie96808@gmail.com
 description: "Rest at the end, not in the middle"
 keyword: "NONE"
-url: "https://xie96808.github.io"          # your host, for absolute URL
+url: "https://blog.xieyw.top"              # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -79,4 +79,3 @@ featured-condition-size: 2              # 相同标签数量大于这个数，�
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
-
